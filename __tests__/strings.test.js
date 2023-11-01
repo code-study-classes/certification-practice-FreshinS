@@ -79,7 +79,7 @@ describe('Group: strings', () => {
 
     expect(countWordsWithA('a b c d e')).toBe(1);
 
-    expect(countWordsWithA('Hello world Wicked')).toBe(1);
+    expect(countWordsWithA('Hello world Wicked')).toBe(0);
   });
 
   test('task7', () => {
@@ -99,7 +99,7 @@ describe('Group: strings', () => {
 
     expect(extractFileName('')).toBe('');
 
-    expect(extractFileName('/folder1/folder2/file.name.ext')).toBe('file');
+    expect(extractFileName('/folder1/folder2/file.name.ext')).toBe('file.name');
 
     expect(extractFileName('../filename.txt')).toBe('filename');
 
