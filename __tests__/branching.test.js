@@ -5,6 +5,7 @@ import {
   findUniqueNumber,
   calculateF,
   describeNumber,
+  getDayName,
   convertToMeters,
   describeAge,
   describeNumber2,
@@ -30,7 +31,8 @@ describe('Group: branching', () => {
 
     expect(getIndexOfSmallerNumber(4, 4)).toBe(1);
 
-    expect(getIndexOfSmallerNumber(0, -1)).toBe(1);
+    //expect(getIndexOfSmallerNumber(0, -1)).toBe(1);
+    expect(getIndexOfSmallerNumber(0, -1)).toBe(2);
 
     expect(getIndexOfSmallerNumber(8.5, 8.8)).toBe(1);
   });

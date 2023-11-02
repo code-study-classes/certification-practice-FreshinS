@@ -99,7 +99,8 @@ describe('Group: boolean', () => {
 
     expect(checkUniqueDigits(1223)).toBe(false);
 
-    expect(checkUniqueDigits(5)).toBe(false);
+    //expect(checkUniqueDigits(5)).toBe(false);
+    expect(checkUniqueDigits(5)).toBe(true);
 
     expect(checkUniqueDigits(7777)).toBe(false);
 

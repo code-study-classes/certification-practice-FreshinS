@@ -80,3 +80,25 @@ export const encryptSentence = (sentence) => {
     }
     return result;
 };
+
+const openingSymbols = ['(', '[', '{', '<'];
+const closingSymbols = [')', ']', '}', '>'];
+
+export const checkBrackets = (s) => {
+    if (s === '') return 0;
+    const stack = [];
+    for (const c of s) {
+        if (openingSymbols.includes(c)) stack.push(c);
+        else if (closingSymbols.includes(c)) {
+            if (!(closingSymbols.indexOf(c) === openingSymbols.indexOf(stack.pop()))) {
+                if (stack.includes(openingSymbols[closingSymbols.indexOf(c)])) {
+                    return -1;
+                } else return s.indexOf(c);
+            }
+        }
+    }
+    if (stack.length === 0) {
+        return 0;
+    }
+    return -1;
+};  
