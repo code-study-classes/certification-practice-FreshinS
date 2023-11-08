@@ -2,10 +2,10 @@ install:
 	npm ci
 
 lint:
-	eslint .
+	npx eslint .
 
 lint-fix:
-	eslint --fix .
+	npx eslint . --fix
 
 test-numbers:
 	npx jest __tests__/numbers.test.js

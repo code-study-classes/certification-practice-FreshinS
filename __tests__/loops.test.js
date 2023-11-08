@@ -36,8 +36,8 @@ describe('Group: loops', () => {
   test('task4', () => {
     expect(fibonacciSequence(1)).toBe(1);
     expect(fibonacciSequence(2)).toBe(1);
-    expect(fibonacciSequence(10)).toBe(89);
-    expect(fibonacciSequence(6)).toBe(13);
+    expect(fibonacciSequence(11)).toBe(89);
+    expect(fibonacciSequence(7)).toBe(13);
   });
 
   test('task5', () => {
@@ -65,7 +65,7 @@ describe('Group: loops', () => {
     expect(findMinKAndSum(3)).toBe(2);
     expect(findMinKAndSum(10)).toBe(4);
     expect(findMinKAndSum(20)).toBe(6);
-    expect(findMinKAndSum(30)).toBe(7);
+    expect(findMinKAndSum(30)).toBe(8);
   });
 
   test('task9', () => {
